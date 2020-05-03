@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id = "title"><span>Yamato Crew Form</span> </h1>
+      <p id="description" ><span>Join the crew</span></p>
+      <!-- <form id="survey-form" > -->
+      <div class="wrapper">
+        <div class="company-info">
+          <h3 class="Yamato Crew Form"></h3>
+          <Ul>
+            <li>Earth Underwater Base</li>
+            <li>(555) 555-5555</li>
+            <li>test@Yamato.test</li>
+          </Ul>
+        </div>
+        <div class="contact">
+          <h3>Email Us</h3>
+          <form>
+            <p>
+              <label id="name-label" >Name</label>
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Name" required/>
+            </p>
+            <p>
+              <label>Company</label>
+              <input type="text" name="Company" placeholder="Company"/>
+            </p>
+            <p>
+              <label id="email-label" >Email Address</label>
+              <input type="email" name="Email" id="email" class="input=field" required placeholder="Enter your Email" />
+            </p>
+            <p>
+              <label id="number-label" >Phone Number</label>
+              <input type="number" name="phone" id="number" min= "1" max="9999999999" class="input-field" placeholder="Phone Number"/>
+            </p>
+            <p>
+              <label>What option best decribes your role on the ship?</label>
+            </p>
+            <p>
+              <select id="dropdown" name="CurrenPos" class="dropdown">
+                <option disable value>Select an option</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Gunner">Gunner</option>
+                <option value="Navigation">Navigation</option>
+                <option value="Medical">Medical</option>
+                <option value="Maintenance">Maintenance</option>
+              </select>
+            </p>
+            <p>
+                <label>What to go to space in a WWII Japanese battleship?</label>
+            </p>
+            <P>
+                <ul style="list-style: none;" >
+                    <li class="radio">
+                        <label>
+                        Definitely
+                        <input name="radio-buttons" value="1" type="radio" class="userRatings" >
+                    </label>
+                    </li>
+                    <li class="radio">
+                            <label>
+                            Maybe
+                            <input name="radio-buttons" value="1" type="radio" class="userRatings" >
+                        </label>
+                        </li>
+                        <li class="radio">
+                                <label>
+                                Hell to the NO!
+                                <input name="radio-buttons" value="1" type="radio" class="userRatings" >
+                            </label>
+                            </li>
+                </ul>
+            </P>
+            <p>
+                <label>Thing you want to accomplish on the way to Iscandar.</label>
+            </p>
+            <p>
+                <ul id="preferences" style="list-style: none;" >
+                <li class="checkbox">
+                    <input name="prefer" value="1" type="checkbox" class="userRatings" >
+                    Fire the Wave Motion Gun
+                </li>
+                <li class="checkbox">
+                        <input name="prefer" value="2" type="checkbox" class="userRatings" >
+                        Start war with Gamilon Empire.
+                </checkbox>
+                </ul>
+            </p>
+            <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="5"></textarea>
+            </p>
+            <p class="full">
+              <button id="submit">submit</button>
+            </p>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
